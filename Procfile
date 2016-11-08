@@ -1,1 +1,1 @@
-web: java -jar target/amz.jar
+web: java -jar target/tsoha16.jar
