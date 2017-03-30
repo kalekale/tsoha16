@@ -19,14 +19,14 @@ re_frame.router.push = (function re_frame$router$push(this$,event){
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$push$arity$2 == null)))){
 return this$.re_frame$router$IEventQueue$push$arity$2(this$,event);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router.push[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$,event);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router.push[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$,event);
 } else {
-var m__37631__auto____$1 = (re_frame.router.push["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$,event);
+var m__37742__auto____$1 = (re_frame.router.push["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$,event);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.push",this$);
 }
@@ -38,14 +38,14 @@ re_frame.router.add_post_event_callback = (function re_frame$router$add_post_eve
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$add_post_event_callback$arity$3 == null)))){
 return this$.re_frame$router$IEventQueue$add_post_event_callback$arity$3(this$,id,callack);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router.add_post_event_callback[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$,id,callack);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router.add_post_event_callback[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$,id,callack);
 } else {
-var m__37631__auto____$1 = (re_frame.router.add_post_event_callback["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$,id,callack);
+var m__37742__auto____$1 = (re_frame.router.add_post_event_callback["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$,id,callack);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.add-post-event-callback",this$);
 }
@@ -57,14 +57,14 @@ re_frame.router.remove_post_event_callback = (function re_frame$router$remove_po
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$remove_post_event_callback$arity$2 == null)))){
 return this$.re_frame$router$IEventQueue$remove_post_event_callback$arity$2(this$,f);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router.remove_post_event_callback[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$,f);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router.remove_post_event_callback[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$,f);
 } else {
-var m__37631__auto____$1 = (re_frame.router.remove_post_event_callback["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$,f);
+var m__37742__auto____$1 = (re_frame.router.remove_post_event_callback["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$,f);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.remove-post-event-callback",this$);
 }
@@ -76,14 +76,14 @@ re_frame.router._fsm_trigger = (function re_frame$router$_fsm_trigger(this$,trig
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_fsm_trigger$arity$3 == null)))){
 return this$.re_frame$router$IEventQueue$_fsm_trigger$arity$3(this$,trigger,arg);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._fsm_trigger[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$,trigger,arg);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._fsm_trigger[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$,trigger,arg);
 } else {
-var m__37631__auto____$1 = (re_frame.router._fsm_trigger["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$,trigger,arg);
+var m__37742__auto____$1 = (re_frame.router._fsm_trigger["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$,trigger,arg);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-fsm-trigger",this$);
 }
@@ -95,14 +95,14 @@ re_frame.router._add_event = (function re_frame$router$_add_event(this$,event){
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_add_event$arity$2 == null)))){
 return this$.re_frame$router$IEventQueue$_add_event$arity$2(this$,event);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._add_event[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$,event);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._add_event[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$,event);
 } else {
-var m__37631__auto____$1 = (re_frame.router._add_event["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$,event);
+var m__37742__auto____$1 = (re_frame.router._add_event["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$,event);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-add-event",this$);
 }
@@ -114,14 +114,14 @@ re_frame.router._process_1st_event_in_queue = (function re_frame$router$_process
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_process_1st_event_in_queue$arity$1 == null)))){
 return this$.re_frame$router$IEventQueue$_process_1st_event_in_queue$arity$1(this$);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._process_1st_event_in_queue[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._process_1st_event_in_queue[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$);
 } else {
-var m__37631__auto____$1 = (re_frame.router._process_1st_event_in_queue["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$);
+var m__37742__auto____$1 = (re_frame.router._process_1st_event_in_queue["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-process-1st-event-in-queue",this$);
 }
@@ -133,14 +133,14 @@ re_frame.router._run_next_tick = (function re_frame$router$_run_next_tick(this$)
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_run_next_tick$arity$1 == null)))){
 return this$.re_frame$router$IEventQueue$_run_next_tick$arity$1(this$);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._run_next_tick[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._run_next_tick[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$);
 } else {
-var m__37631__auto____$1 = (re_frame.router._run_next_tick["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$);
+var m__37742__auto____$1 = (re_frame.router._run_next_tick["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-run-next-tick",this$);
 }
@@ -152,14 +152,14 @@ re_frame.router._run_queue = (function re_frame$router$_run_queue(this$){
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_run_queue$arity$1 == null)))){
 return this$.re_frame$router$IEventQueue$_run_queue$arity$1(this$);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._run_queue[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._run_queue[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$);
 } else {
-var m__37631__auto____$1 = (re_frame.router._run_queue["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$);
+var m__37742__auto____$1 = (re_frame.router._run_queue["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-run-queue",this$);
 }
@@ -171,14 +171,14 @@ re_frame.router._exception = (function re_frame$router$_exception(this$,ex){
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_exception$arity$2 == null)))){
 return this$.re_frame$router$IEventQueue$_exception$arity$2(this$,ex);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._exception[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$,ex);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._exception[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$,ex);
 } else {
-var m__37631__auto____$1 = (re_frame.router._exception["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$,ex);
+var m__37742__auto____$1 = (re_frame.router._exception["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$,ex);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-exception",this$);
 }
@@ -190,14 +190,14 @@ re_frame.router._pause = (function re_frame$router$_pause(this$,later_fn){
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_pause$arity$2 == null)))){
 return this$.re_frame$router$IEventQueue$_pause$arity$2(this$,later_fn);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._pause[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$,later_fn);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._pause[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$,later_fn);
 } else {
-var m__37631__auto____$1 = (re_frame.router._pause["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$,later_fn);
+var m__37742__auto____$1 = (re_frame.router._pause["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$,later_fn);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-pause",this$);
 }
@@ -209,14 +209,14 @@ re_frame.router._resume = (function re_frame$router$_resume(this$){
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_resume$arity$1 == null)))){
 return this$.re_frame$router$IEventQueue$_resume$arity$1(this$);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._resume[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._resume[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$);
 } else {
-var m__37631__auto____$1 = (re_frame.router._resume["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$);
+var m__37742__auto____$1 = (re_frame.router._resume["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-resume",this$);
 }
@@ -228,14 +228,14 @@ re_frame.router._call_post_event_callbacks = (function re_frame$router$_call_pos
 if((!((this$ == null))) && (!((this$.re_frame$router$IEventQueue$_call_post_event_callbacks$arity$2 == null)))){
 return this$.re_frame$router$IEventQueue$_call_post_event_callbacks$arity$2(this$,event);
 } else {
-var x__37630__auto__ = (((this$ == null))?null:this$);
-var m__37631__auto__ = (re_frame.router._call_post_event_callbacks[goog.typeOf(x__37630__auto__)]);
-if(!((m__37631__auto__ == null))){
-return m__37631__auto__.call(null,this$,event);
+var x__37741__auto__ = (((this$ == null))?null:this$);
+var m__37742__auto__ = (re_frame.router._call_post_event_callbacks[goog.typeOf(x__37741__auto__)]);
+if(!((m__37742__auto__ == null))){
+return m__37742__auto__.call(null,this$,event);
 } else {
-var m__37631__auto____$1 = (re_frame.router._call_post_event_callbacks["_"]);
-if(!((m__37631__auto____$1 == null))){
-return m__37631__auto____$1.call(null,this$,event);
+var m__37742__auto____$1 = (re_frame.router._call_post_event_callbacks["_"]);
+if(!((m__37742__auto____$1 == null))){
+return m__37742__auto____$1.call(null,this$,event);
 } else {
 throw cljs.core.missing_protocol.call(null,"IEventQueue.-call-post-event-callbacks",this$);
 }
@@ -270,8 +270,8 @@ return re_frame.router._fsm_trigger.call(null,this$__$1,new cljs.core.Keyword(nu
 } else {
 re_frame.router._process_1st_event_in_queue.call(null,this$__$1);
 
-var G__39830 = (n - (1));
-n = G__39830;
+var G__45928 = (n - (1));
+n = G__45928;
 continue;
 }
 }
@@ -322,74 +322,74 @@ return re_frame.router._fsm_trigger.call(null,this$__$1,new cljs.core.Keyword(nu
 re_frame.router.EventQueue.prototype.re_frame$router$IEventQueue$_fsm_trigger$arity$3 = (function (this$,trigger,arg){
 var self__ = this;
 var this$__$1 = this;
-var vec__39821 = (function (){var G__39824 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [self__.fsm_state,trigger], null);
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"idle","idle",-2007156861),new cljs.core.Keyword(null,"add-event","add-event",938429088)], null),G__39824)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),((function (G__39824,this$__$1){
+var vec__45916 = (function (){var G__45919 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [self__.fsm_state,trigger], null);
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"idle","idle",-2007156861),new cljs.core.Keyword(null,"add-event","add-event",938429088)], null),G__45919)){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),((function (G__45919,this$__$1){
 return (function (){
 re_frame.router._add_event.call(null,this$__$1,arg);
 
 return re_frame.router._run_next_tick.call(null,this$__$1);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),new cljs.core.Keyword(null,"add-event","add-event",938429088)], null),G__39824)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),((function (G__39824,this$__$1){
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),new cljs.core.Keyword(null,"add-event","add-event",938429088)], null),G__45919)){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),((function (G__45919,this$__$1){
 return (function (){
 return re_frame.router._add_event.call(null,this$__$1,arg);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),new cljs.core.Keyword(null,"run-queue","run-queue",-1701798027)], null),G__39824)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),((function (G__39824,this$__$1){
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),new cljs.core.Keyword(null,"run-queue","run-queue",-1701798027)], null),G__45919)){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),((function (G__45919,this$__$1){
 return (function (){
 return re_frame.router._run_queue.call(null,this$__$1);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),new cljs.core.Keyword(null,"add-event","add-event",938429088)], null),G__39824)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),((function (G__39824,this$__$1){
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),new cljs.core.Keyword(null,"add-event","add-event",938429088)], null),G__45919)){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),((function (G__45919,this$__$1){
 return (function (){
 return re_frame.router._add_event.call(null,this$__$1,arg);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),new cljs.core.Keyword(null,"pause","pause",-2095325672)], null),G__39824)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"paused","paused",-1710376127),((function (G__39824,this$__$1){
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),new cljs.core.Keyword(null,"pause","pause",-2095325672)], null),G__45919)){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"paused","paused",-1710376127),((function (G__45919,this$__$1){
 return (function (){
 return re_frame.router._pause.call(null,this$__$1,arg);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),new cljs.core.Keyword(null,"exception","exception",-335277064)], null),G__39824)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"idle","idle",-2007156861),((function (G__39824,this$__$1){
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),new cljs.core.Keyword(null,"exception","exception",-335277064)], null),G__45919)){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"idle","idle",-2007156861),((function (G__45919,this$__$1){
 return (function (){
 return re_frame.router._exception.call(null,this$__$1,arg);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),new cljs.core.Keyword(null,"finish-run","finish-run",753148477)], null),G__39824)){
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),new cljs.core.Keyword(null,"finish-run","finish-run",753148477)], null),G__45919)){
 if(cljs.core.empty_QMARK_.call(null,self__.queue)){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"idle","idle",-2007156861)], null);
 } else {
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),((function (G__39824,this$__$1){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"scheduled","scheduled",553898551),((function (G__45919,this$__$1){
 return (function (){
 return re_frame.router._run_next_tick.call(null,this$__$1);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 }
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"paused","paused",-1710376127),new cljs.core.Keyword(null,"add-event","add-event",938429088)], null),G__39824)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"paused","paused",-1710376127),((function (G__39824,this$__$1){
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"paused","paused",-1710376127),new cljs.core.Keyword(null,"add-event","add-event",938429088)], null),G__45919)){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"paused","paused",-1710376127),((function (G__45919,this$__$1){
 return (function (){
 return re_frame.router._add_event.call(null,this$__$1,arg);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 } else {
-if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"paused","paused",-1710376127),new cljs.core.Keyword(null,"resume","resume",-118572261)], null),G__39824)){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),((function (G__39824,this$__$1){
+if(cljs.core._EQ_.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"paused","paused",-1710376127),new cljs.core.Keyword(null,"resume","resume",-118572261)], null),G__45919)){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"running","running",1554969103),((function (G__45919,this$__$1){
 return (function (){
 return re_frame.router._resume.call(null,this$__$1);
-});})(G__39824,this$__$1))
+});})(G__45919,this$__$1))
 ], null);
 } else {
 throw cljs.core.ex_info.call(null,[cljs.core.str("re-frame: router state transition not found. "),cljs.core.str(self__.fsm_state),cljs.core.str(" "),cljs.core.str(trigger)].join(''),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"fsm-state","fsm-state",1656310533),self__.fsm_state,new cljs.core.Keyword(null,"trigger","trigger",103466139),trigger], null));
@@ -404,8 +404,8 @@ throw cljs.core.ex_info.call(null,[cljs.core.str("re-frame: router state transit
 }
 }
 })();
-var new_fsm_state = cljs.core.nth.call(null,vec__39821,(0),null);
-var action_fn = cljs.core.nth.call(null,vec__39821,(1),null);
+var new_fsm_state = cljs.core.nth.call(null,vec__45916,(0),null);
+var action_fn = cljs.core.nth.call(null,vec__45916,(1),null);
 self__.fsm_state = new_fsm_state;
 
 if(cljs.core.truth_(action_fn)){
@@ -445,58 +445,58 @@ try{re_frame.events.handle.call(null,event_v);
 self__.queue = cljs.core.pop.call(null,self__.queue);
 
 return re_frame.router._call_post_event_callbacks.call(null,this$__$1,event_v);
-}catch (e39825){var ex = e39825;
+}catch (e45921){var ex = e45921;
 return re_frame.router._fsm_trigger.call(null,this$__$1,new cljs.core.Keyword(null,"exception","exception",-335277064),ex);
 }});
 
 re_frame.router.EventQueue.prototype.re_frame$router$IEventQueue$_call_post_event_callbacks$arity$2 = (function (_,event_v){
 var self__ = this;
 var ___$1 = this;
-var seq__39826 = cljs.core.seq.call(null,cljs.core.vals.call(null,self__.post_event_callback_fns));
-var chunk__39827 = null;
-var count__39828 = (0);
-var i__39829 = (0);
+var seq__45923 = cljs.core.seq.call(null,cljs.core.vals.call(null,self__.post_event_callback_fns));
+var chunk__45924 = null;
+var count__45925 = (0);
+var i__45926 = (0);
 while(true){
-if((i__39829 < count__39828)){
-var callback = cljs.core._nth.call(null,chunk__39827,i__39829);
+if((i__45926 < count__45925)){
+var callback = cljs.core._nth.call(null,chunk__45924,i__45926);
 callback.call(null,event_v,self__.queue);
 
-var G__39831 = seq__39826;
-var G__39832 = chunk__39827;
-var G__39833 = count__39828;
-var G__39834 = (i__39829 + (1));
-seq__39826 = G__39831;
-chunk__39827 = G__39832;
-count__39828 = G__39833;
-i__39829 = G__39834;
+var G__45930 = seq__45923;
+var G__45931 = chunk__45924;
+var G__45932 = count__45925;
+var G__45933 = (i__45926 + (1));
+seq__45923 = G__45930;
+chunk__45924 = G__45931;
+count__45925 = G__45932;
+i__45926 = G__45933;
 continue;
 } else {
-var temp__4657__auto__ = cljs.core.seq.call(null,seq__39826);
+var temp__4657__auto__ = cljs.core.seq.call(null,seq__45923);
 if(temp__4657__auto__){
-var seq__39826__$1 = temp__4657__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__39826__$1)){
-var c__37778__auto__ = cljs.core.chunk_first.call(null,seq__39826__$1);
-var G__39835 = cljs.core.chunk_rest.call(null,seq__39826__$1);
-var G__39836 = c__37778__auto__;
-var G__39837 = cljs.core.count.call(null,c__37778__auto__);
-var G__39838 = (0);
-seq__39826 = G__39835;
-chunk__39827 = G__39836;
-count__39828 = G__39837;
-i__39829 = G__39838;
+var seq__45923__$1 = temp__4657__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__45923__$1)){
+var c__37889__auto__ = cljs.core.chunk_first.call(null,seq__45923__$1);
+var G__45934 = cljs.core.chunk_rest.call(null,seq__45923__$1);
+var G__45935 = c__37889__auto__;
+var G__45936 = cljs.core.count.call(null,c__37889__auto__);
+var G__45937 = (0);
+seq__45923 = G__45934;
+chunk__45924 = G__45935;
+count__45925 = G__45936;
+i__45926 = G__45937;
 continue;
 } else {
-var callback = cljs.core.first.call(null,seq__39826__$1);
+var callback = cljs.core.first.call(null,seq__45923__$1);
 callback.call(null,event_v,self__.queue);
 
-var G__39839 = cljs.core.next.call(null,seq__39826__$1);
-var G__39840 = null;
-var G__39841 = (0);
-var G__39842 = (0);
-seq__39826 = G__39839;
-chunk__39827 = G__39840;
-count__39828 = G__39841;
-i__39829 = G__39842;
+var G__45938 = cljs.core.next.call(null,seq__45923__$1);
+var G__45939 = null;
+var G__45940 = (0);
+var G__45941 = (0);
+seq__45923 = G__45938;
+chunk__45924 = G__45939;
+count__45925 = G__45940;
+i__45926 = G__45941;
 continue;
 }
 } else {
@@ -523,8 +523,8 @@ re_frame.router.EventQueue.cljs$lang$type = true;
 
 re_frame.router.EventQueue.cljs$lang$ctorStr = "re-frame.router/EventQueue";
 
-re_frame.router.EventQueue.cljs$lang$ctorPrWriter = (function (this__37573__auto__,writer__37574__auto__,opt__37575__auto__){
-return cljs.core._write.call(null,writer__37574__auto__,"re-frame.router/EventQueue");
+re_frame.router.EventQueue.cljs$lang$ctorPrWriter = (function (this__37684__auto__,writer__37685__auto__,opt__37686__auto__){
+return cljs.core._write.call(null,writer__37685__auto__,"re-frame.router/EventQueue");
 });
 
 re_frame.router.__GT_EventQueue = (function re_frame$router$__GT_EventQueue(fsm_state,queue,post_event_callback_fns){
