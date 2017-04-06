@@ -91,6 +91,13 @@
  (fn [db [_ res]]
    (assoc-in db [:aihealueet] res)))
 
+(re-frame/reg-event-db
+ :topic-list-fail
+ (fn [db [_ res]]
+   (print res)
+   db))
+
+
 (re-frame/reg-event-fx
  :get-topic-list
  (fn

@@ -17,27 +17,46 @@
 ;; Views
 
 (defn aihe-sivu [{alue-id :alue-id aihe-id :aihe-id}]
-  (let [aihe (re-frame/subscribe [:aihe [alue-id aihe-id]])]
+  (let [aihe (re-frame/subscribe [:aihe])
+        viestit (re-frame/subscribe [:viestit])]
     (fn []
       [:div
-       [:h3 (:nimi @aihe)]
-       (for [viesti (:viestit @aihe)]
+       [:h3 (:otsikko @aihe)]
+       (for [viesti @viestit]
          ^{:key viesti} [:div
-                         [:h4 (str (:nimi viesti) ":")]
-                         [:p (str (:viesti viesti))]])])))
+                         [:h4 (str (:name viesti) " sanoo:")]
+                         [:p (str (:viesti viesti))]])
+       [:h4 "Vastaa:"]
+       [:textarea {:rows        20
+                   :placeholder "viesti..."
+                   :on-change   #(re-frame/dispatch [:message-edited (-> % .-target .-value)])}]
+       [:input {:type     "submit"
+                :value    "Laheta"
+                :on-click #(re-frame/dispatch [:send-new-message])}]])))
 
 (defn aihealue-sivu [{id :id}]
-  (let [aiheet (re-frame/subscribe [:aiheet id])
-        aihealue (re-frame/subscribe [:aihealue id])]
+  (let [aiheet   (re-frame/subscribe [:aiheet id])
+        aihealue (re-frame/subscribe [:aihealue])]
     [:div
      [:h2 (:nimi @aihealue)]
+     [:a {:href "#/uusi-aihe"}
+      [:input {:type  "submit"
+               :value "Uusi aihe"}]]
      [:ul
       (for [aihe @aiheet]
-         ^{:key aihe} [:li [:a {:href (str "#/aihealueet/" id "/"  (key aihe))} (:nimi (val aihe))]])]]))
+        ^{:key aihe}
+        [:li
+         [:a {:href (str "#/aihealueet/"
+                         id
+                         "/"
+                         (:id aihe))}
+          (:otsikko aihe)]])]]))
 
 (defn aihealue-komponentti [aihealue]
   [:li
-   [:a {:href (str "#/aihealueet/" (:id aihealue))} (:nimi aihealue)]])
+   [:a {:href (str "#/aihealueet/"
+                   (:id aihealue))}
+    (:nimi aihealue)]])
 
 (defn aihealue-lista []
   (let [aihealueet (re-frame/subscribe [:aihealueet])]
@@ -45,6 +64,19 @@
       [:ul
        (for [aihealue @aihealueet]
          ^{:key aihealue} [aihealue-komponentti aihealue])])))
+
+(defn uusi-aihe-sivu []
+  [:div
+   [:h2 "Uusi aihe"]
+   [:input {:type        "text"
+            :placeholder "Otsikko"
+            :on-change   #(re-frame/dispatch [:thread-edited (-> % .-target .-value)])}]
+   [:textarea {:rows        20
+               :placeholder "viesti..."
+               :on-change   #(re-frame/dispatch [:message-edited (-> % .-target .-value)])}]
+   [:input {:type     "submit"
+            :value    "Laheta"
+            :on-click #(re-frame/dispatch [:send-new-topic])}]])
 
 (defn home-page []
   [:div [:h2 "Keskustelupalsta"]

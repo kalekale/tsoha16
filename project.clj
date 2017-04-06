@@ -29,7 +29,9 @@
                   :scope "provided"]
                  [secretary "1.2.3"]
                  [venantius/accountant "0.1.7"
-                  :exclusions [org.clojure/tools.reader]]]
+                  :exclusions [org.clojure/tools.reader]]
+                 [org.clojure/java.jdbc "0.6.1"]
+                 [org.postgresql/postgresql "9.4-1201-jdbc41"]]
 
   :plugins [[lein-environ "1.0.2"]
             [lein-cljsbuild "1.1.1"]
