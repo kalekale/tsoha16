@@ -5,8 +5,14 @@ password varchar(50) NOT NULL,
 admin boolean NOT NULL
 );
 
+CREATE TABLE Aihealue(
+id SERIAL PRIMARY KEY,
+nimi varchar(50) NOT NULL
+);
+
 CREATE TABLE Aihe(
 id SERIAL PRIMARY KEY,
+aihealue INTEGER REFERENCES Aihealue(id),
 kayttaja_id INTEGER REFERENCES Kayttaja(id),
 otsikko varchar(50) NOT NULL
 );
