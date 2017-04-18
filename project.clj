@@ -5,7 +5,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [re-frame "0.8.0"]
+                 [re-frame "0.9.2"]
                  [com.ninjudd/ring-async "0.2.0"]
                  [cljs-ajax "0.5.8"]
                  [day8.re-frame/http-fx "0.1.2"]
@@ -31,7 +31,8 @@
                  [venantius/accountant "0.1.7"
                   :exclusions [org.clojure/tools.reader]]
                  [org.clojure/java.jdbc "0.6.1"]
-                 [org.postgresql/postgresql "9.4-1201-jdbc41"]]
+                 [org.postgresql/postgresql "9.4-1201-jdbc41"]
+                 [com.cemerick/friend "0.2.3"]]
 
   :plugins [[lein-environ "1.0.2"]
             [lein-cljsbuild "1.1.1"]

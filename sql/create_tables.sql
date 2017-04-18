@@ -1,7 +1,7 @@
 CREATE TABLE Kayttaja(
 id SERIAL PRIMARY KEY,
 name varchar(50) NOT NULL,
-password varchar(50) NOT NULL,
+password varchar(500) NOT NULL,
 admin boolean NOT NULL
 );
 
@@ -20,7 +20,7 @@ otsikko varchar(50) NOT NULL
 CREATE TABLE Viesti(
 id SERIAL PRIMARY KEY,
 kayttaja_id INTEGER REFERENCES Kayttaja(id),
-aihe_id INTEGER REFERENCES Aihe(id),
+aihe_id INTEGER REFERENCES Aihe(id) ON DELETE CASCADE,
 viesti varchar(10000) NOT NULL
 );
 

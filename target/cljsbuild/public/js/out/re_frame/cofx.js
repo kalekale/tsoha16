@@ -29,28 +29,28 @@ re_frame.cofx.register = cljs.core.partial.call(null,re_frame.registrar.register
  * 
  * Given an `id`, and an optional value, lookup the registered coeffect
  * handler (previously registered via `reg-cofx`) and it with two arguments:
- * the current value of `:coeffect` and, optionally, the value. The registered handler
+ * the current value of `:coeffects` and, optionally, the value. The registered handler
  * is expected to return a modified coeffect.
  * 
  */
 re_frame.cofx.inject_cofx = (function re_frame$cofx$inject_cofx(var_args){
-var args49700 = [];
-var len__38153__auto___49703 = arguments.length;
-var i__38154__auto___49704 = (0);
+var args48269 = [];
+var len__47522__auto___48272 = arguments.length;
+var i__47523__auto___48273 = (0);
 while(true){
-if((i__38154__auto___49704 < len__38153__auto___49703)){
-args49700.push((arguments[i__38154__auto___49704]));
+if((i__47523__auto___48273 < len__47522__auto___48272)){
+args48269.push((arguments[i__47523__auto___48273]));
 
-var G__49705 = (i__38154__auto___49704 + (1));
-i__38154__auto___49704 = G__49705;
+var G__48274 = (i__47523__auto___48273 + (1));
+i__47523__auto___48273 = G__48274;
 continue;
 } else {
 }
 break;
 }
 
-var G__49702 = args49700.length;
-switch (G__49702) {
+var G__48271 = args48269.length;
+switch (G__48271) {
 case 1:
 return re_frame.cofx.inject_cofx.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -60,7 +60,7 @@ return re_frame.cofx.inject_cofx.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args49700.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args48269.length)].join('')));
 
 }
 });

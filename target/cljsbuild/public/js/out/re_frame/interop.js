@@ -56,5 +56,42 @@ return reagent.ratom.dispose_BANG_.call(null,a_ratom);
 re_frame.interop.set_timeout_BANG_ = (function re_frame$interop$set_timeout_BANG_(f,ms){
 return setTimeout(f,ms);
 });
+re_frame.interop.now = (function re_frame$interop$now(){
+if(typeof performance.now !== 'undefined'){
+return performance.now();
+} else {
+return Date.now();
+}
+});
+/**
+ * Produces an id for reactive Reagent values
+ *   e.g. reactions, ratoms, cursors.
+ */
+re_frame.interop.reagent_id = (function re_frame$interop$reagent_id(reactive_val){
+if(((!((reactive_val == null)))?(((false) || (reactive_val.reagent$ratom$IReactiveAtom$))?true:false):false)){
+return [cljs.core.str((function (){var pred__47866 = cljs.core.instance_QMARK_;
+var expr__47867 = reactive_val;
+if(cljs.core.truth_(pred__47866.call(null,reagent.ratom.RAtom,expr__47867))){
+return "ra";
+} else {
+if(cljs.core.truth_(pred__47866.call(null,reagent.ratom.RCursor,expr__47867))){
+return "rc";
+} else {
+if(cljs.core.truth_(pred__47866.call(null,reagent.ratom.Reaction,expr__47867))){
+return "rx";
+} else {
+if(cljs.core.truth_(pred__47866.call(null,reagent.ratom.Track,expr__47867))){
+return "tr";
+} else {
+return "other";
+}
+}
+}
+}
+})()),cljs.core.str(cljs.core.hash.call(null,reactive_val))].join('');
+} else {
+return null;
+}
+});
 
 //# sourceMappingURL=interop.js.map
